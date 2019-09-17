@@ -53,7 +53,199 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+h1, h2, h3, a, p{
+	font-family: 'Archivo Narrow', sans-serif;
 }
 
+html, body {
+    height: 100%;
+	font-size: 62.5%;
+}
+
+h1 {
+	color: blue;
+}
+
+//----------My-Work-----------
+
+@cardColor: #92cc96;
+
+.header{
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	nav{
+		display: flex;
+		flex-flow: row;
+		justify-content: space-evenly;
+	}
+		a{
+			justify-content: space-around;
+			text-decoration: none;
+			color: #347038;
+			font-size: 2.0rem;
+			border-radius: 8px;
+			padding: 3px 3px;
+		}
+}
+
+.container-1{
+	margin: 30px 50px;
+	display: flex;
+	justify-content: center;
+	background-color: @cardColor;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+
+	.section-1{
+		width: 70%;
+		border: 1px solid black;
+		justify-content: center;
+		border: none;
+	}
+}
+
+.nameAndPicture h1{
+	font-size: 3.5rem;
+	color: black;
+	margin-top: 20px;
+}
+
+.nameAndPicture p{
+	font-size: 2rem;
+	color: black;
+	margin-top: 5px;
+}
+
+.nameAndPicture img{
+	border-radius: 50%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.call-to-action p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+}
+
+.call-to-action button{
+	margin-top: 10px;
+	color: white;
+	font-size: 1.5rem;
+	border-radius: 15px solid;
+	background-color: #7ac27f;
+	padding: 12px 12px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.10), 0 6px 20px 0 rgba(0,0,0,0.25);
+}
+
+.container-2{
+	margin: 10px 50px;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: @cardColor;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+	.listen-up{
+	width: 50%;
+	}
+
+	.skills{
+		margin-right: 3px;
+	}
+}
+
+.listen-up h1{
+	color: black;
+	margin-bottom: 10px;
+	font-size: 2.8rem;
+}
+
+.listen-up p{
+	font-size: 1.8rem;
+}
+
+.skills h1{
+	color: black;
+	margin-bottom: 10px;
+	font-size: 2.8rem;
+	border-bottom: 1px solid black;
+}
+
+.skills li{
+//	//margin-left: 50px;
+	color: black;
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+	border-bottom: 1px solid black;
+	width: 70px;
+//
+}
+
+@mmedia only screen and (max width: 500px){
+
+}
+
+.work-history{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 2rem;
+	background-color: @cardColor;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	margin: 30px 50px;
+	list-style: none;
+
+	.work-history li{
+		display: flex;
+		justify-content: center;
+	}
+
+	.listOne {
+		margin-right: 30px;
+	}
+
+	.listTwo{
+		margin-right: 30px;
+	}
+
+	.listThree{
+		margin-right: 30px;
+	}
+
+	.listFour{
+
+	}
+}
+
+.listOne ul {
+	margin-bottom: 10px;
+}
+
+.listTwo ul{
+	margin-bottom: 10px;
+}
+
+.listThree ul{
+	margin-bottom: 10px;
+}
+
+.listFour ul{
+	margin-bottom: 10px;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+footer div{
+	font-size: 2rem;
+
+}
